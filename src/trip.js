@@ -1,6 +1,6 @@
 const readlineSync = require("readline-sync");
 
-const students = Number(readlineSync.question("Students: "));
+const students = Number(readlineSync.question("\nStudents: "));
 const teachers = Number(readlineSync.question("Teachers: "));
 const busCapacity = Number(readlineSync.question("Bus capacity: "));
 
@@ -9,4 +9,4 @@ let buses = totalPassengers / busCapacity;
 let totalBuses = Math.ceil(buses);
 let lastBus = totalPassengers % busCapacity;
 
-console.log("\n" + totalBuses + " bus(es) is (are) needed, with " + lastBus + " passenger(s) on the last bus.");
+console.log("\n" + totalBuses + " bus(es) is (are) needed, with " + lastBus + " passenger(s) on the last bus.\n");

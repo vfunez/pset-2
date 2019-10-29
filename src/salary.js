@@ -1,6 +1,6 @@
 const readlineSync = require("readline-sync");
 
-const annualSalary = (readlineSync.question("Annual salary: "));
+let annualSalary = (readlineSync.question("\nAnnual salary: "));
 
 const PRE_TAX = 0.07;
 const FEDERAL_INCOME_TAX = 0.157;
@@ -17,4 +17,4 @@ let fourthDeduction = firstDeduction - thirdDeduction
 let takeHomePay = fourthDeduction;
 takeHomePay = takeHomePay.toLocaleString("en", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
-console.log("\nYour take-home pay each check will be $" + takeHomePay + ".");
+console.log("\nYour take-home pay each check will be $" + takeHomePay + ".\n");

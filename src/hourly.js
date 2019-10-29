@@ -1,16 +1,16 @@
 const readlineSync = require("readline-sync");
 
-const hw = Number(readlineSync.question("Hourly wage: "));
+const hourlyWage = Number(readlineSync.question("\nHourly wage: "));
 
-const mo = Number(readlineSync.question("\nMonday: "));
-const tu = Number(readlineSync.question("Tuesday: "));
-const we = Number(readlineSync.question("Wednesday: "));
-const th = Number(readlineSync.question("Thursday: "));
-const fr = Number(readlineSync.question("Friday: "));
-const sa = Number(readlineSync.question("Saturday: "));
-const su = Number(readlineSync.question("Sunday: "));
+let monday = Number(readlineSync.question("\nMonday: "));
+let tuesday = Number(readlineSync.question("Tuesday: "));
+let wednesday = Number(readlineSync.question("Wednesday: "));
+let thursday = Number(readlineSync.question("Thursday: "));
+let friday = Number(readlineSync.question("Friday: "));
+let saturday = Number(readlineSync.question("Saturday: "));
+let sunday = Number(readlineSync.question("Sunday: "));
 
-let salary = hw * (mo + tu + we + th + fr + sa + su);
+let salary = hourlyWage * (monday + tuesday + wednesday + thursday + friday + saturday + sunday);
 salary = salary.toLocaleString("en", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
-console.log("\nYou'll make $" + salary + " this week.");
+console.log("\nYou'll make $" + salary + " this week.\n");
